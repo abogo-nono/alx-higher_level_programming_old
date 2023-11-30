@@ -10,7 +10,6 @@
 int check_cycle(listint_t *list)
 {
 	const listint_t *fast = list, *slow = list;
-	unsigned int n; /* number of nodes */
 
 	while (slow != NULL && fast != NULL && fast->next != NULL)
 	{
