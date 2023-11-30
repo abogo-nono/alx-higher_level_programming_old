@@ -6,7 +6,3 @@ def uppercase(str):
             continue
 
         print(str[i], end='')
-
-
-uppercase("best")
-uppercase("Best School 98 Battery street")
