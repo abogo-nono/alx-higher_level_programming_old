@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-import sys
+
+if __name__ == "__name__":
+    import sys
 
 argc = len(sys.argv)
 
