@@ -1,13 +1,15 @@
 #!/usr/bin/python3
+from sys import argv
+
 
 if __name__ == "__main__":
     import sys
     from calculator_1 import add, sub,  mul, div
 
-argc = len(sys.argv)
+argc = len(sys.argv) - 1
 
-if argc - 1 != 3:
-    print("Usage: ./100-my_calculator.py <a> <operator> <b> ")
+if argc != 3:
+    print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     sys.exit(1)
 
 operators = {'+': add, '-': sub, '*': mul, '/': div}
@@ -19,4 +21,4 @@ if sys.argv[2] not in list(operators.keys()):
 a = int(sys.argv[1])
 b = int(sys.argv[3])
 r = operators[sys.argv[2]](a, b)
-print("{} + {} = {}".format(a, b, r))
+print("{} {} {} = {}".format(a, b, argv[2], r))
