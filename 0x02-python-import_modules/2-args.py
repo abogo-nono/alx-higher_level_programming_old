@@ -3,7 +3,7 @@
 if __name__ == "__name__":
     import sys
 
-    argc = len(sys.argv)
+argc = len(sys.argv)
 
 if argc == 1:
     print("{} argument.".format(argc - 1))
