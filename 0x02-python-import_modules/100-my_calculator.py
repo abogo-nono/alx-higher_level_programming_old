@@ -21,4 +21,4 @@ if sys.argv[2] not in list(operators.keys()):
 a = int(sys.argv[1])
 b = int(sys.argv[3])
 r = operators[sys.argv[2]](a, b)
-print("{} {} {} = {}".format(a, b, argv[2], r))
+print("{} {} {} = {}".format(a, argv[2], b, r))
