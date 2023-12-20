@@ -9,5 +9,12 @@ class Square:
         a class that define a square
     """
 
-    __size = None
+    def __init__(self, size):
+        """get the size of side of the square
+
+        Args:
+            size (int): the size of a side of the square
+        """
+        self.__size = size
+
     pass
