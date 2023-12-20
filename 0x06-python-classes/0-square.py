@@ -4,7 +4,7 @@
 """
 
 
-class Square():
+class Square:
     """Square
         a class that define a square
     """
