@@ -1,4 +1,6 @@
 #!/usr/bin/python
+"""Read file content
+"""
 
 def read_file(filename=""):
     """this function is used to read an UTF-8 file and print his content in stdout
