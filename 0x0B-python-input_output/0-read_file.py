@@ -6,7 +6,7 @@ def read_file(filename=""):
     Args:
         filename (str, optional): the name of the file t read. Defaults to "".
     """
-    with open(filename, 'r') as f:
-        content = f.read()
-    
-    print(content)
+    with open(filename, 'r', encoding="utf-8") as f:
+        print(f.read(), end="")
+
+read_file('friends')
