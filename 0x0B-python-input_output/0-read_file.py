@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+def read_file(filename=""):
+    """this function is used to read an UTF-8 file and print his content in stdout
+
+    Args:
+        filename (str, optional): the name of the file t read. Defaults to "".
+    """
+    with open(filename, 'r') as f:
+        content = f.read()
+    
+    # print(content)
